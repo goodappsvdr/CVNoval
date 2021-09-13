@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{8C2D18C4-1DB6-45AC-9FA3-15A936BA857C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CVNoval</RootNamespace>
+    <AssemblyName>CVNoval</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44347</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CVNoval.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CVNoval.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AD\AD.vbproj">
+      <Project>{08a3028e-6444-4036-9fdb-7e239d2750fc}</Project>
+      <Name>AD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FrmConfirmarEliminarCursos.aspx" />
+    <Content Include="FrmConfirmarEliminarDatoGrupoFamiliar.aspx" />
+    <Content Include="FrmConfirmarEliminarDatoReferenciaLaboral.aspx" />
+    <Content Include="FrmConfirmarEliminarFormacionAcademica.aspx" />
+    <Content Include="FrmEliminarCursos.aspx" />
+    <Content Include="FrmEliminarDatoReferenciaLaboral.aspx" />
+    <Content Include="FrmEliminarFormacionAcademica.aspx" />
+    <Content Include="FrmEliminarGrupoFamiliar.aspx" />
+    <Content Include="FrmIngreso.aspx" />
+    <Content Include="FrmInicio.aspx" />
+    <Content Include="FrmLogin.aspx" />
+    <Content Include="FrmMiPerfil.aspx" />
+    <Content Include="FrmModificarCursos.aspx" />
+    <Content Include="FrmModificarFormacionAcademica.aspx" />
+    <Content Include="FrmModificarGrupoFamiliar.aspx" />
+    <Content Include="FrmModificarReferenciaLaboral.aspx" />
+    <Content Include="ResetEmail.aspx" />
+    <Content Include="ValidarEmail.aspx" />
+    <Content Include="VerMiPerfil.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmConfirmarEliminarCursos.aspx.designer.vb">
+      <DependentUpon>FrmConfirmarEliminarCursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfirmarEliminarCursos.aspx.vb">
+      <DependentUpon>FrmConfirmarEliminarCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmConfirmarEliminarDatoGrupoFamiliar.aspx.designer.vb">
+      <DependentUpon>FrmConfirmarEliminarDatoGrupoFamiliar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfirmarEliminarDatoGrupoFamiliar.aspx.vb">
+      <DependentUpon>FrmConfirmarEliminarDatoGrupoFamiliar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmConfirmarEliminarDatoReferenciaLaboral.aspx.designer.vb">
+      <DependentUpon>FrmConfirmarEliminarDatoReferenciaLaboral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfirmarEliminarDatoReferenciaLaboral.aspx.vb">
+      <DependentUpon>FrmConfirmarEliminarDatoReferenciaLaboral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmConfirmarEliminarFormacionAcademica.aspx.designer.vb">
+      <DependentUpon>FrmConfirmarEliminarFormacionAcademica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfirmarEliminarFormacionAcademica.aspx.vb">
+      <DependentUpon>FrmConfirmarEliminarFormacionAcademica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmEliminarCursos.aspx.designer.vb">
+      <DependentUpon>FrmEliminarCursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEliminarCursos.aspx.vb">
+      <DependentUpon>FrmEliminarCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmEliminarDatoReferenciaLaboral.aspx.designer.vb">
+      <DependentUpon>FrmEliminarDatoReferenciaLaboral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEliminarDatoReferenciaLaboral.aspx.vb">
+      <DependentUpon>FrmEliminarDatoReferenciaLaboral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmEliminarFormacionAcademica.aspx.designer.vb">
+      <DependentUpon>FrmEliminarFormacionAcademica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEliminarFormacionAcademica.aspx.vb">
+      <DependentUpon>FrmEliminarFormacionAcademica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmEliminarGrupoFamiliar.aspx.designer.vb">
+      <DependentUpon>FrmEliminarGrupoFamiliar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEliminarGrupoFamiliar.aspx.vb">
+      <DependentUpon>FrmEliminarGrupoFamiliar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmIngreso.aspx.designer.vb">
+      <DependentUpon>FrmIngreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIngreso.aspx.vb">
+      <DependentUpon>FrmIngreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmInicio.aspx.designer.vb">
+      <DependentUpon>FrmInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInicio.aspx.vb">
+      <DependentUpon>FrmInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.aspx.designer.vb">
+      <DependentUpon>FrmLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.aspx.vb">
+      <DependentUpon>FrmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmMiPerfil.aspx.designer.vb">
+      <DependentUpon>FrmMiPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMiPerfil.aspx.vb">
+      <DependentUpon>FrmMiPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmModificarCursos.aspx.designer.vb">
+      <DependentUpon>FrmModificarCursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarCursos.aspx.vb">
+      <DependentUpon>FrmModificarCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmModificarFormacionAcademica.aspx.designer.vb">
+      <DependentUpon>FrmModificarFormacionAcademica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarFormacionAcademica.aspx.vb">
+      <DependentUpon>FrmModificarFormacionAcademica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmModificarGrupoFamiliar.aspx.designer.vb">
+      <DependentUpon>FrmModificarGrupoFamiliar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarGrupoFamiliar.aspx.vb">
+      <DependentUpon>FrmModificarGrupoFamiliar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmModificarReferenciaLaboral.aspx.designer.vb">
+      <DependentUpon>FrmModificarReferenciaLaboral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarReferenciaLaboral.aspx.vb">
+      <DependentUpon>FrmModificarReferenciaLaboral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="globalWS.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ResetEmail.aspx.designer.vb">
+      <DependentUpon>ResetEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResetEmail.aspx.vb">
+      <DependentUpon>ResetEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidarEmail.aspx.designer.vb">
+      <DependentUpon>ValidarEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidarEmail.aspx.vb">
+      <DependentUpon>ValidarEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerMiPerfil.aspx.designer.vb">
+      <DependentUpon>VerMiPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerMiPerfil.aspx.vb">
+      <DependentUpon>VerMiPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54132</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44347/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
